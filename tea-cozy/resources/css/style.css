@@ -1,0 +1,134 @@
+/*
+Purpose: Style sheet for Tea Cozy
+
+Programmer: N. S. Clerman
+/*
+
+/* Global page properties */
+body {
+    color: seashell;
+    background-color: black;
+    font-family: Helvetica;
+    text-align: center;
+    font-size: 22px;
+    margin: 0;
+    opacity: 0.9;
+}
+
+h2, h3, h4 {
+    margin: 0;
+    padding: 10px;
+}
+
+a {
+    color: seashell;
+}
+
+
+/*  Define general horizontal and vertical flex containers */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.col-container {
+    flex-direction: column;
+}
+
+/* Top fixed header */
+header {
+    position: fixed;
+    height: 69px;
+    border-bottom: 1px solid seashell;
+    background-color: black;
+    width: 100%;
+}
+
+header img {
+    height: 50px;
+    padding-left: 10px;
+}
+
+nav {
+    flex-grow: 1;
+}
+
+#nav-container {
+    justify-content: flex-end;
+    padding-right: 10px;
+}
+
+nav span {
+    margin-left: 1.2em;
+}
+
+/* Main contents with three divisions */
+main {
+    width: 1200px;
+    margin: auto;
+}
+
+/* first major division in main */
+#mission {
+    background-image: url('../images/img-mission-background.jpg');
+    height: 700px;
+    width: 1200px;
+    padding-top: 60px;
+}
+
+#mission-strip {
+    margin: auto;
+    width: 100%;
+    background-color: black;
+}
+
+/* second major division*/
+#teas {
+    width: 1000px;
+    padding-top: 3em;
+    padding-bottom: 3em;
+    margin: auto;
+}
+
+.tea-row {
+    display: flex;
+    width: 1000px;
+    justify-content: space-between;
+}
+
+#row-2 {
+    justify-content: center;
+}
+
+.tea-row img {
+    width: 300px;
+    height: 200px;
+    display: block;
+    margin: .8em;
+}
+
+/* third major division in main */
+#locations {
+    background-image: url('../images/img-locations-background.jpg');
+    height: 500px;
+    width: 1200px;
+    padding-top: 70px;
+}
+
+.location {
+    border: 2px solid white;
+    background: black;
+    margin: 5px 20px;
+}
+
+footer {
+    height: 200px;
+    width: 300px;
+    margin: auto;
+}
+
+#copyright {
+    text-align: left;
+    margin-left: 10px;
+}
